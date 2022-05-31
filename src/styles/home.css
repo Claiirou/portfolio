@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Slim&display=swap");
+
+/* font-family: "Big Shoulders Display", cursive; */
+
+.titleHome {
+  font-size: 48px;
+  font-family: "Nova Slim", cursive;
+  text-align: center;
+  margin-top: 20%;
+  letter-spacing: 30px;
+}
