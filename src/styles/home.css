@@ -16,3 +16,16 @@
   color: white;
   text-align: center;
 }
+
+@media screen and (max-width: 800px) {
+  .titleHome {
+    font-size: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40%;
+  }
+
+  .subtitleHome {
+    font-size: 24px;
+  }
+}
