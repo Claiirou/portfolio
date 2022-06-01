@@ -1,7 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nova+Slim&display=swap");
-
-/* font-family: "Big Shoulders Display", cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
 .titleHome {
   font-size: 48px;
@@ -10,4 +8,11 @@
   margin-top: 20%;
   letter-spacing: 30px;
   color: white;
+}
+
+.subtitleHome {
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
+  color: white;
+  text-align: center;
 }
