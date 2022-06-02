@@ -17,12 +17,12 @@
   padding-bottom: 20px;
 }
 
-.paraAbout {
+.paraAboutContainer {
   color: white;
-  width: 50%;
   margin-right: 50px;
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 
 .titleAbout {
@@ -44,5 +44,5 @@
   font-size: 18px;
   text-align: center;
   align-items: center;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
 }

@@ -12,15 +12,17 @@ const About = () => {
           <h2 className="aboutName">Claire</h2>
           <h2 className="aboutName">MACHET</h2>
         </div>
-        <div className="paraAbout">
+        <div className="paraAboutContainer">
           <p className="titleAbout">
             Je suis Développeuse Web Fullstack Junior
           </p>
-          <p className="paraAbout">
+          <br></br>
+          <p className="paraAbout paraAbout2">
             Après avoir travaillé de nombreuses années dans le domaine
             juridique, j’ai eu envie de revenir à mes premiers amours et à mes
             appétences techniques.
           </p>
+          <br></br>
           <p className="paraAbout">
             Ainsi, j’ai découvert les formations intensives chez la Wild Code
             School et me voilà lancée dans l'aventure du développement web{" "}
