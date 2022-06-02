@@ -1,3 +1,14 @@
 .buttonHome {
   background-color: transparent;
+  cursor: pointer;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.imgBtn {
+  width: 60px;
+}
+
+.navbarHome {
+  display: none;
 }
