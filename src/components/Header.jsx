@@ -27,7 +27,7 @@ const Header = () => {
         </ul>
         <button className="buttonHome" onClick={toggleMenu}>
           <img
-            src={menuOpen ? "/menu_fresh.png" : "/ajouter.png"}
+            src={menuOpen ? "/menu_fresh.png" : "/croix.png"}
             alt="menu"
             className="imgBtn"
           />
