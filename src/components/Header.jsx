@@ -4,11 +4,11 @@ import "../styles/header.css";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = React.useState(false);
-  const toggleMenu = () => setMenuOpen((open) => !open);
+  const toggleMenu = () => setMenuOpen(!menuOpen);
   return (
     <header>
       <nav>
-        <ul>
+        <ul className={menuOpen ? "navBar" : "active"}>
           <li className="navbarHome">
             <NavLink to="/" className="navbarTitle">
               HOME
@@ -26,13 +26,12 @@ const Header = () => {
           </li>
         </ul>
         <button className="buttonHome" onClick={toggleMenu}>
-          <img src={"/menu_fresh.png"} alt="menu" className="imgBtn" />
+          <img
+            src={menuOpen ? "/menu_fresh.png" : "/ajouter.png"}
+            alt="menu"
+            className="imgBtn"
+          />
         </button>
-        <div
-          className={`w-full block flex-grow md:flex md:items-center md:w-auto md:h-[35px] ${
-            menuOpen ? "h-[150px]" : "h-0"
-          } overflow-hidden transition-all`}
-        ></div>
       </nav>
     </header>
   );

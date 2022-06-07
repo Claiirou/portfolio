@@ -9,6 +9,11 @@
   width: 60px;
 }
 
-.navbarHome {
-  display: none;
+.navBar {
+  position: fixed;
+  right: -100%;
+}
+
+.active {
+  right: 0;
 }
