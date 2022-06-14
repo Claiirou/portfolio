@@ -1,38 +1,42 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 import "../styles/header.css";
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = React.useState(false);
-  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
   return (
     <header>
-      <nav>
+      <div className="menuNav">
         <ul className={menuOpen ? "navBar" : "active"}>
           <li className="navbarHome">
-            <NavLink to="/" className="navbarTitle">
+            <Link to="/" className="navbarTitle" onClick={toggleMenu}>
               HOME
-            </NavLink>
+            </Link>
           </li>
           <li className="navbarHome">
-            <NavLink to="/header" className="navbarTitle">
+            <Link to="/work" className="navbarTitle" onClick={toggleMenu}>
               WORK
-            </NavLink>
+            </Link>
           </li>
           <li className="navbarHome">
-            <NavLink to="/about" className="navbarTitle">
+            <Link to="/about" className="navbarTitle" onClick={toggleMenu}>
               ABOUT
-            </NavLink>
+            </Link>
           </li>
         </ul>
-        <button className="buttonHome" onClick={toggleMenu}>
-          <img
-            src={menuOpen ? "/menu_fresh.png" : "/croix.png"}
-            alt="menu"
-            className="imgBtn"
-          />
-        </button>
-      </nav>
+      </div>
+
+      <button className="buttonHome" onClick={toggleMenu}>
+        <img
+          src={menuOpen ? "/menu_fresh.png" : "/croix.png"}
+          alt="menu"
+          className="imgBtn"
+        />
+      </button>
     </header>
   );
 };

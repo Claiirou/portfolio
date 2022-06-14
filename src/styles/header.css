@@ -13,9 +13,16 @@
   position: fixed;
   left: -100%;
   transition: 0.5s ease-in-out;
+  z-index: auto;
 }
 
 .active {
   left: 0;
   transition: 0.5s ease-in-out;
+  width: 100%;
+}
+
+.navbarHome {
+  font-size: 92px;
+  margin: 50px;
 }

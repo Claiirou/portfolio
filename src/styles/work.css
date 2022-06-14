@@ -4,3 +4,10 @@ h1 {
   font-family: "Nova Slim", cursive;
   letter-spacing: 10px;
 }
+
+.siteBtn {
+  cursor: pointer;
+}
+
+.containerWork {
+}
