@@ -3,6 +3,7 @@
   cursor: pointer;
   margin-left: 40px;
   margin-top: 20px;
+  border: none;
 }
 
 .imgBtn {
@@ -13,7 +14,7 @@
   position: fixed;
   left: -100%;
   transition: 0.5s ease-in-out;
-  z-index: auto;
+  z-index: 1;
 }
 
 .active {
@@ -25,4 +26,10 @@
 .navbarHome {
   font-size: 92px;
   margin: 50px;
+}
+
+.menuNav {
+  position: fixed;
+  background-color: #001021;
+  width: 100%;
 }

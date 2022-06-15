@@ -4,7 +4,7 @@ import { useState } from "react";
 import "../styles/header.css";
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(true);
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -28,6 +28,13 @@ const Header = () => {
             </Link>
           </li>
         </ul>
+        <button className="buttonHome" onClick={toggleMenu}>
+          <img
+            src={menuOpen ? "/menu_fresh.png" : "/croix.png"}
+            alt="menu"
+            className="imgBtn"
+          />
+        </button>
       </div>
 
       <button className="buttonHome" onClick={toggleMenu}>
